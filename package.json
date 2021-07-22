@@ -17,7 +17,9 @@
   "dependencies": {
     "express": "^4.17.1",
     "faker": "^5.5.3",
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "socket.io": "^4.1.2",
+    "mongoose": "^5.13.2"
   },
   "bugs": {
     "url": "https://github.com/agustinyuse/test_view/issues"

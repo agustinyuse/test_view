@@ -1,0 +1,55 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Vista de Productos</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.js"></script>
+  </head>
+
+  <body>
+    <div class="container mt-3">
+      <form id="form">
+        <div class="form-group d-flex">
+          <input
+            id="txtNumber"
+            name="txtNumber"
+            type="number"
+            class="form-control w-25"
+            placeholder="Ingrese número"
+          />
+
+          <button class="btn btn-primary ml-3" type="button" id="btnGenerate">
+            Generar mocks
+          </button>
+        </div>
+      </form>
+      <h2>Mock de productos</h2>
+
+      <div id="message"></div>
+
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Foto</th>
+          </tr>
+        </thead>
+        <tbody id="productsContainer"></tbody>
+      </table>
+    </div>
+
+    <script src="./vista-test.js"></script>
+  </body>
+</html>
